@@ -5,3 +5,17 @@ Sunnysideup\PerfectCMSImages\Model\File\PerfectCMSImageDataExtension:
   perfect_cms_images_append_title_to_image_links_classes:
     - Image
   perfect_cms_images_background_padding_color: "#ffffff"
+  perfect_cms_images_image_definitions:
+    standard:
+      width: 1920
+      height: 1080
+      enforce_size: false
+      folder: my-image-folder-a
+      filetype: "jpg"
+      use_retina: true
+      padding_bg_colour: '#dddddd'
+      crop: true
+
+Sunnysideup\PerfectCmsImages\Api\ImageManipulations:
+  webp_enabled: false
+  webp_quality: 100

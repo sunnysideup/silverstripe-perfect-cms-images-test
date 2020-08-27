@@ -10,7 +10,10 @@
     $Form
 
     <h1>$Title</h1>
-	$Content
+    $Content
+
+    $StandAlone.PerfectCmsImageTag(standard).RAW
+
     <% loop $PerfectCMSImagesLoop %>
         <hr /><hr />
         <h2>$Title.RAW</h2>
