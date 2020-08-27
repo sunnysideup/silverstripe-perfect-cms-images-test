@@ -1,0 +1,37 @@
+{
+    "name": "sunnysideup/silverstripe-perfect-cms-images-test",
+    "type": "silverstripe-recipe",
+    "description": "Demo site to test perfect CMS images",
+    "require": {
+        "php": ">=7.3",
+        "silverstripe/recipe-cms": "^4.6.0",
+        "sunnysideup/perfect_cms_images": "dev-master",
+        "silverstripe/sspak": "dev-master"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ]
+    },
+    "extra": {
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
+    }
+}

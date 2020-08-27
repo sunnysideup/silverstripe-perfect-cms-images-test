@@ -1,0 +1,25 @@
+---
+Name: perfect_cms_images_custom
+---
+Sunnysideup\PerfectCMSImages\Model\File\PerfectCMSImageDataExtension:
+  perfect_cms_images_append_title_to_image_links_classes:
+    - Image
+  perfect_cms_images_background_padding_color: "#ffffff"
+  # perfect_cms_images_image_definitions:
+  #   CroppedSmall:
+  #     width: 100
+  #     height: 100
+  #     enforce_size: false
+  #     folder: cropped
+  #     filetype: "jpg"
+  #     use_retina: true
+  #     padding_bg_colour: '#dddddd'
+  #     crop: true
+  #   Small:
+  #     width: 100
+  #     height: 0
+  #     enforce_size: true
+  #     folder: small
+  #     filetype: "jpg or a png, no transparency is required"
+  #     use_retina: false
+  #     padding_bg_colour: '#000000'
