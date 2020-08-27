@@ -19,7 +19,7 @@ function createPerfectCMSOptions() {
     $titleA = [];
     $imageArray = [];
 
-    $heightA = [0];
+    $heightA = [0, 300];
     foreach($heightA as $height) {
         if($height === 0) {
             $titleA['height'] = 'height: flexible';
@@ -27,7 +27,7 @@ function createPerfectCMSOptions() {
             $titleA['height'] = 'height: '.$height.'px';
         }
 
-        $widthA = [0];
+        $widthA = [0, 300];
         foreach($widthA as $width) {
             if($width === 0) {
                 $titleA['width'] = 'width: flexible';
@@ -35,7 +35,7 @@ function createPerfectCMSOptions() {
                 $titleA['width'] = 'width: '.$width.'px';
             }
 
-            $enforceSizeA = [0];
+            $enforceSizeA = [0, 1];
             foreach($enforceSizeA as $enforceSize) {
                 $titleA['enforceSize'] = 'enforce size: '.($enforceSize ? 'yes' : 'no').'';
 
@@ -43,15 +43,15 @@ function createPerfectCMSOptions() {
                 foreach($filetypeA as $filetype) {
                     $titleA['fileType'] = 'file type: '. $filetype .'';
 
-                    $useRetinaA = [0];
+                    $useRetinaA = [0, 1];
                     foreach($useRetinaA as $useRetina) {
                         $titleA['useRetina'] = 'uses retina: ' . ($useRetina ? 'yes' : 'no') . '';
 
-                        $paddingBGColourA = ['#334455'];
+                        $paddingBGColourA = ['#334455', '#ffffff'];
                         foreach($paddingBGColourA as $paddingBGColour) {
                             $titleA['bgColour'] = 'bg color: ' . $paddingBGColour . '';
 
-                            $cropA = [0];
+                            $cropA = [0, 1];
                             foreach($cropA as $crop) {
                                 $titleA['isCropped'] = 'is cropped: ' . $crop . '';
 
